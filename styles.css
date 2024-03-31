@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7; /* Añadido para dar un color de fondo */
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 10px; /* Aumentamos el radio del borde */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Añadimos sombra */
+  padding: 20px;
+  max-width: 400px; /* Limitamos el ancho */
+  width: 100%; /* Hacemos que ocupe todo el ancho */
+}
+
+input[type="text"] {
+  width: calc(100% - 20px); /* Añadimos margen a los lados del input */
+  margin-bottom: 15px; /* Aumentamos el margen inferior */
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc; /* Añadido borde al input */
+  border-radius: 5px; /* Añadido radio al borde del input */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Añadida transición al color de fondo */
+}
+
+button:hover {
+  background-color: #ddd;
+}
